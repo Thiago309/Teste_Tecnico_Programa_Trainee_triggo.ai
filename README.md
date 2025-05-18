@@ -1,4 +1,4 @@
-# Diagrama de Classe
+# Modelagem Lógica
 
 ```mermaid 
 classDiagram
