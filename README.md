@@ -196,14 +196,110 @@ As 5 categorias com notas médias mais altas foram:
 5. Eletrodomésticos – Forno e Café (small_appliances_home_oven_and_coffee)
 
 
-## Visualizações Interativas (Plotly)
-1. Dashboard de evolução de vendas com filtros por estado e categoria.
+## Visualizações Interativas
 
-2. Mapa de calor mostrando concentração de pedidos por estado.
 
-3. Gráfico de dispersão relacionando avaliação e tempo de entrega.
+📈 1. Dashboard Geral – Evolução das Vendas ao Longo do Tempo
+- Dashboard interativo com filtros por estado e categoria de produto.
 
-4. Painel de análise de desempenho dos vendedores.
+- Permite visualizar a evolução dos pedidos ao longo do tempo por região e segmento de mercado.
+
+- Utiliza plotly.graph_objects com múltiplos traces ativados via dropdown.
+
+📌 Insights:
+
+- Identificação de picos de vendas sazonais.
+
+- Permite aos gestores ajustar estoques ou campanhas conforme tendências temporais e regionais.
+
+  
+🗺️ 2. Mapa de calor mostrando concentração de pedidos por estado.
+- Representação geográfica da quantidade de pedidos por estado brasileiro.
+
+- Utiliza scatter_geo com escala de cor baseada no volume de pedidos.
+
+📌 Justificativa do Gráfico:
+
+- O gráfico de dispersão geográfica facilita a visualização espacial dos dados.
+
+- Permite identificar rapidamente onde está a maior concentração de vendas, útil para planejamento logístico e estratégias regionais.
+
+
+⏱️ 3. Gráfico de dispersão relacionando avaliação e tempo de entrega.
+- Gráficos do tipo boxplot mostram a distribuição do tempo de entrega em função das notas de avaliação.
+
+📌 Insights:
+
+- Quanto maior o tempo de entrega, menor a nota média atribuída pelo cliente.
+
+- Evidencia a importância da logística no índice de satisfação.
+
+  
+🛍️ 4. Painel de análise de desempenho dos vendedores.
+- Análise dos melhores vendedores com base em:
+
+- Volume de vendas
+
+- Tempo médio de entrega
+
+- Avaliação média recebida
+
+📌 Justificativa do Gráfico:
+
+O gráfico scatter permite avaliar múltiplas métricas ao mesmo tempo.
+
+Ajuda a identificar os vendedores de maior destaque e os que precisam de melhorias.
+
+## 🧰 Tecnologias e Ferramentas
+
+### 📦 Linguagens e Ambiente
+Python 3.x — linguagem principal para análise de dados e machine learning
+
+Jupyter Notebook — ambiente interativo para desenvolvimento do projeto
+
+### 📚 Bibliotecas de Análise e Manipulação
+pandas — manipulação e análise de dados tabulares (DataFrames)
+
+numpy — operações matemáticas e vetoriais
+
+sqlite3 — conexão com banco de dados local em SQLite
+
+### 📊 Visualização de Dados
+matplotlib — geração de gráficos básicos
+
+seaborn — gráficos estatísticos (boxplots, histogramas)
+
+plotly — dashboards e gráficos interativos (como dropdowns, mapas, scatter plot)
+
+### 🧠 Machine Learning
+scikit-learn — modelos de classificação e clustering:
+
+LogisticRegression
+
+KMeans
+
+train_test_split
+
+StandardScaler
+
+classification_report, confusion_matrix, ConfusionMatrixDisplay
+
+### 🌎 Geolocalização
+Cálculo de distância geográfica entre lat/long com numpy
+
+Agrupamento por geolocation_zip_code_prefix
+
+### 🗂️ Extras
+os — configuração de variáveis de ambiente para uso de núcleos do processador
+
+json e requests — utilizados para testes de integrações ou configurações de API's
+
+## 📁 Estrutura do Projeto
+📦 raiz/
+├── datasets/          # Arquivos CSV do Kaggle
+├── Analytics.ipynb    # Notebook com a solução completa
+├── README.md
+├── ecommerce.db        # base de dados
 
 
 
