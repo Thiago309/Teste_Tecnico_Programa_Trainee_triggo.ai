@@ -126,7 +126,7 @@ Foi realizada uma análise de agrupamento (KMeans) com base no valor total gasto
 | 3       | Clientes Inativos/Iniciais | Gasto baixo, possível abandono                         |
 
 #### Estratégias por Cluster:
-🔶 Cluster 1 – Clientes Premium
+Cluster 1 – Clientes Premium
 
 - Programas de fidelidade VIP
 
@@ -134,19 +134,19 @@ Foi realizada uma análise de agrupamento (KMeans) com base no valor total gasto
 
 - Atendimento personalizado
 
-🟡 Cluster 0 – Clientes em Crescimento
+Cluster 0 – Clientes em Crescimento
 
 - Estímulos como promoções, combos e brindes
 
 - Frete grátis progressivo ou cashback
 
-🟢 Cluster 2 – Clientes Sazonais
+Cluster 2 – Clientes Sazonais
 
 - Campanhas em datas comemorativas
 
 - E-mails personalizados com base em histórico de compra
 
-🔴 Cluster 3 – Clientes Inativos
+Cluster 3 – Clientes Inativos
 
 - Campanhas de reativação (ex: “sentimos sua falta”)
 
@@ -199,43 +199,43 @@ As 5 categorias com notas médias mais altas foram:
 ## Visualizações Interativas
 
 
-📈 1. Dashboard Geral – Evolução das Vendas ao Longo do Tempo
+1. Dashboard Geral – Evolução das Vendas ao Longo do Tempo
 - Dashboard interativo com filtros por estado e categoria de produto.
 
 - Permite visualizar a evolução dos pedidos ao longo do tempo por região e segmento de mercado.
 
 - Utiliza plotly.graph_objects com múltiplos traces ativados via dropdown.
 
-📌 Insights:
+Insights:
 
 - Identificação de picos de vendas sazonais.
 
 - Permite aos gestores ajustar estoques ou campanhas conforme tendências temporais e regionais.
 
   
-🗺️ 2. Mapa de calor mostrando concentração de pedidos por estado.
+2. Mapa de calor mostrando concentração de pedidos por estado.
 - Representação geográfica da quantidade de pedidos por estado brasileiro.
 
 - Utiliza scatter_geo com escala de cor baseada no volume de pedidos.
 
-📌 Justificativa do Gráfico:
+Justificativa do Gráfico:
 
 - O gráfico de dispersão geográfica facilita a visualização espacial dos dados.
 
 - Permite identificar rapidamente onde está a maior concentração de vendas, útil para planejamento logístico e estratégias regionais.
 
 
-⏱️ 3. Gráfico de dispersão relacionando avaliação e tempo de entrega.
+3. Gráfico de dispersão relacionando avaliação e tempo de entrega.
 - Gráficos do tipo boxplot mostram a distribuição do tempo de entrega em função das notas de avaliação.
 
-📌 Insights:
+Insights:
 
 - Quanto maior o tempo de entrega, menor a nota média atribuída pelo cliente.
 
 - Evidencia a importância da logística no índice de satisfação.
 
   
-🛍️ 4. Painel de análise de desempenho dos vendedores.
+4. Painel de análise de desempenho dos vendedores.
 - Análise dos melhores vendedores com base em:
 
 - Volume de vendas
@@ -244,34 +244,34 @@ As 5 categorias com notas médias mais altas foram:
 
 - Avaliação média recebida
 
-📌 Justificativa do Gráfico:
+Justificativa do Gráfico:
 
 O gráfico scatter permite avaliar múltiplas métricas ao mesmo tempo.
 
 Ajuda a identificar os vendedores de maior destaque e os que precisam de melhorias.
 
-## 🧰 Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
-### 📦 Linguagens e Ambiente
+### Linguagens e Ambiente
 Python 3.x — linguagem principal para análise de dados e machine learning
 
 Jupyter Notebook — ambiente interativo para desenvolvimento do projeto
 
-### 📚 Bibliotecas de Análise e Manipulação
+### Bibliotecas de Análise e Manipulação
 pandas — manipulação e análise de dados tabulares (DataFrames)
 
 numpy — operações matemáticas e vetoriais
 
 sqlite3 — conexão com banco de dados local em SQLite
 
-### 📊 Visualização de Dados
+### Visualização de Dados
 matplotlib — geração de gráficos básicos
 
 seaborn — gráficos estatísticos (boxplots, histogramas)
 
 plotly — dashboards e gráficos interativos (como dropdowns, mapas, scatter plot)
 
-### 🧠 Machine Learning
+### Machine Learning
 scikit-learn — modelos de classificação e clustering:
 
 LogisticRegression
@@ -284,18 +284,18 @@ StandardScaler
 
 classification_report, confusion_matrix, ConfusionMatrixDisplay
 
-### 🌎 Geolocalização
+### Geolocalização
 Cálculo de distância geográfica entre lat/long com numpy
 
 Agrupamento por geolocation_zip_code_prefix
 
-### 🗂️ Extras
+### Extras
 os — configuração de variáveis de ambiente para uso de núcleos do processador
 
 json e requests — utilizados para testes de integrações ou configurações de API's
 
-## 📁 Estrutura do Projeto
-📦 raiz/
+## Estrutura do Projeto
+raiz/
 ├── datasets/          # Arquivos CSV do Kaggle
 ├── Analytics.ipynb    # Notebook com a solução completa
 ├── README.md
